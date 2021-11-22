@@ -1,4 +1,4 @@
-# `jdk-deploy-docker` - **Github Action**
+# `deploy-docker` - **Github Action**
 
 This action deploy docker image
 
@@ -17,9 +17,8 @@ name: Build maven project and deploy docker image
 on: [pull_request]
 
 jobs:
-    build-mvn:
-        runs-on: ubuntu-latest
-        steps:
-          - name: Deploy
-            uses: rbkmoney/build-actions/packages/jdk-deploy-docker@v1.0.0
+  deploy:
+    runs-on: ubuntu-latest
+      steps:
+        uses: rbkmoney/build-actions/packages/deploy-docker@v1.0.0
 ```
