@@ -7,7 +7,7 @@ inputs:
   registry-password:
     description: 'Password for image registry'
     required: true
-  dokerfile-path:
+  dockerfile-path:
     description: 'Path to dockerfile directory'
     required: false
     default: './target'
