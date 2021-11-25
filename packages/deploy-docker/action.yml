@@ -26,4 +26,4 @@ runs:
       run: docker login -u ${{inputs.registry-username}} -p ${{inputs.registry-password}}
 
     - shell: bash
-      run: docker push --all-tags "${GITHUB_REPOSITORY_OWNER,,}/${GITHUB_REPOSITORY#*/}"
+      run: docker push --all-tags "${GITHUB_REPOSITORY_OWNER,,}/${IMAGE_NAME}"
