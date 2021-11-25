@@ -38,4 +38,4 @@ runs:
         echo "RBK_DOCKER_REGISTRY=registry.hub.docker.com" >> $GITHUB_ENV
 
     - shell: bash
-      run: mvn -B clean compile package -Ddockerfile.registry=https://${RBK_DOCKER_REGISTRY} ${{ inputs.mvn-args }}
+      run: mvn -B clean compile package -Ddockerfile.registry=${RBK_DOCKER_REGISTRY} ${{ inputs.mvn-args }}
