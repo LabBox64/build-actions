@@ -8,6 +8,7 @@ This action deploy docker image
 | ------------------ | ---------------------------------------------------------------------------------------------- |
 | `registry-username`| Username for image registry                                                                    |
 | `registry-password`| Password for image registry                                                                    |
+| `dokerfile-path`   | Path to dockerfile directory                                                                   |
 
 ## Example Workflow File
 
